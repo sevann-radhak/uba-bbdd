@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS colors (
+    id INT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    rgb CHAR(6) NOT NULL,
+    is_trans CHAR(1) NOT NULL
+);
