@@ -4,3 +4,6 @@ CREATE TABLE IF NOT EXISTS themes (
     parent_id INT,
     FOREIGN KEY (parent_id) REFERENCES themes(id)
 );
+
+ALTER TABLE themes
+ALTER COLUMN parent_id DROP NOT NULL;
